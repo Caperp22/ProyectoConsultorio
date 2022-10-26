@@ -23,34 +23,33 @@
     <script src='js/login.js'></script>
 </head>
 
-<body> 
-
-    <form action="/action_page.php" method="post">
-        <div class="contenedorLogin">
-            <div class="imgcontainer">
-                <img src="assets/img/logo.webp" alt="Avatar" class="avatar" id="imgLogo">
+<body>        
+        <form action="/action_page.php" method="post">
+            <div class="contenedorLogin">
+                <div class="imgcontainer">
+                    <img src="assets/img/logo.webp" alt="Avatar" class="avatar" id="imgLogo">
+                </div>
+            
+                <div class="container">
+                    <img src="assets/img/perfil.png" alt="">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="userName" id="userName" required>
+        
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="userPassword" id="userPassword" required>
+        
+                    <button type="button" onclick="Login();">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+        
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
             </div>
-    
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="userName" id="userName" required>
-    
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="userPassword" id="userPassword" required>
-    
-                <button type="button" onclick="Login();">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-    
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </div>
-    </form>
-
+        </form> 
 </body>
 
 </html>
